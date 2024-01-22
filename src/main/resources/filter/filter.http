@@ -1,0 +1,20 @@
+### create Student -> bu studentni qoshish uchun
+POST localhost:8080/filterStudent
+Content-Type: application/json
+
+{
+  "name": "Rajab",
+  "surname": "Java",
+  "age": 22,
+  "level": "10",
+  "gender": "MALE"
+}
+
+
+### Student filter and pagination
+POST localhost:8080/filterStudent/filter?page=1&size=2
+Content-Type: application/json
+
+{
+  "age": 22
+}
